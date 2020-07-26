@@ -1,0 +1,102 @@
+#logo {
+  position: absolute;
+  left: 100px;
+  top: 1px;
+}
+
+.pataya {
+  font-family: "Pattaya", sans-serif;
+}
+
+.tranp {
+  position: relative;
+  margin: 0 auto;
+}
+
+.trans {
+  width: 600px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.trans.top:hover {
+  opacity: 0;
+}
+
+.picture-paragraph {
+  font-size: 12pt;
+  font-family: tahome;
+  color: #000;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#latoyaimg {
+  width: 130px;
+  float: right;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 40%;
+  border: 1px solid plum;
+  box-shadow: inset 20px 20px 10px rgba(70, 70, 70, 0.5);
+}
+
+ul {
+  align-items: center;
+  list-style-type: none;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li a {
+  color: rgb(7, 10, 1);
+  padding: 0px 25px;
+  text-decoration: dashed;
+  font-weight: bolder;
+}
+
+li a:hover {
+  background-color: rgb(212, 197, 112);
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(208, 255, 0);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .tranp,
+  .trans .para {
+    width: 150%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .picture-paragraph {
+    width: 100%;
+  }
+}

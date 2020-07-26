@@ -1,0 +1,194 @@
+/* body {
+    background-image: url(images/masks.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    grid-template-rows: repeat(3, 250px);
+    grid-gap: 10px;
+
+}
+
+.item {
+    font-size: 1em;
+    color: #fff;
+    font-family: sans-serif;
+    width: 100%;
+    padding: 0px;
+}
+
+.item1 {
+    grid-column: 2/4;
+
+
+}
+
+.item2 {
+
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+.item3 {
+
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+
+.item5 {
+
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 28;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+li a {
+    color: rgb(7, 10, 1);
+    padding: 0px 25px;
+    text-decoration: dashed;
+    font-weight: bolder;
+}
+
+li a:hover {
+    background-color: #F2cc0F;
+}
+
+#logo {
+    position: absolute;
+    left: 100px;
+    top: 1px;
+}
+
+.henney {
+    font-family: 'Henny Penny', cursive;
+}
+
+.pataya {
+    font-family: 'Pattaya', sans-serif;
+
+}
+
+
+h1 {
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    height: 70px;
+    font-family: Pattaya;
+    font-size: 30px;
+    color: rgb(6, 78, 37);
+
+    text-align: center
+}
+
+h6 {
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    height: 70px;
+    font-family: Pattaya;
+    font-size: 20px;
+    color: rgb(6, 129, 245);
+    text-align: center
+}
+
+label,
+input {
+    color: rgb(146, 156, 5);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3em;
+}
+
+label {
+    display: block;
+}
+
+input {
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+fieldset {
+    width: 80%;
+    margin: 0 auto;
+    color: green;
+}
+
+input[type="button"] {
+    width: 30%;
+    background-color: antiquewhite;
+}
+
+input[type="button"]:active {
+    width: 30%;
+    background-color: #fc0;
+}
+
+input[type="submit"] {
+    width: 30%;
+    background-color: antiquewhite;
+}
+
+input[type="submit"]:active {
+    width: 30%;
+    background-color: #fc0;
+}
+
+textarea {
+    width: 440px;
+    height: 40px;
+    resize: none;
+}
+
+#pp {
+
+    text-align: center;
+    bottom: 50;
+
+
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 100;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(54, 121, 126);
+    color: white;
+    text-align: center;
+}
+
+.trivia {
+
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(208, 255, 0);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+
+}

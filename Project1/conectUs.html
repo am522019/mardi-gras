@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ConectUs</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Henny+Penny|Pattaya|Roboto:900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/conectUs.css">
+    <link rel="shorcut icon" href="images/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">
+            <nav class="navbar fixed-top navbar-light bg-light">
+                <a class="navbar-brand">
+                    <img id="logo" src="images/logo.png" width="130px" height="130px">
+                </a>
+                <ul>
+                    <li><a class="navbar-brand" href="anothermain.html">Home</a></li>
+                    <li><a class="navbar-brand" href="About.html">About Us</a></li>
+                    <li><a class="navbar-brand" href="media.html">Media</a></li>
+                    <li><a class="navbar-brand" href="FQA.html">FQA</a></li>
+                    <li><a class="navbar-brand" href="conectUs.html">Conect Us</a></li>
+                </ul>
+
+            </nav>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="pataya"> CONECT US </h1>
+            <h6 class="henney">We will try the best to help you</h6>
+        </div>
+        <div class="item item2">
+            <a href="https://thehauntedmuseum.com/" target="_blank">
+                <img title="Hunted Museum" src="images/huntedM.jpg" width="200px" height="400px">
+            </a>
+        </div>
+        <div class="item item3">
+            <form name="myForm" action="/anothermain.html" id="user-input">
+                <fieldset>
+                    <label> Name: </label>
+                    <span class="errName"></span>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <br>
+                    <label>Last Name:</label>
+                    <span class="errLname"></span>
+                    <input type="text" id="lastName" placeholder="Enter your last name">
+                    <br>
+                    <label>E-mail</label>
+                    <span class="errEmail"></span>
+                    <input type="email" id="email" placeholder="Enter your E-mail" r>
+                    <br>
+                    <label for="anything">Write anything</label>
+                    <textarea name="text" id="text" placeholder="Write anything you want"></textarea>
+                    <br>
+                    <input type="button" value="send">
+                    <br>
+                    <input type="submit" value="submit">
+                </fieldset>
+            </form>
+        </div>
+        <div class="item item5"> <a href="http://www.museumofdeath.net/nola" target="_blank">
+                <img title="The Death Museum" src="images/museumOfDeath.jpg" width="200px" height="400px">
+            </a></div>
+    </div>
+    <div class="footer line-heigth-30" style="background-color: rgba(42, 42, 119, 0.87);">
+        <ul>
+            <li> <a id="pp" href="privacyPolicy.html">Privacy Policy</a></li>
+            <li> <a href="#">This Web builder:Amar Siksek</a></li>
+            <li><a href="conectUs.html">Conect Us</a></li>
+        </ul>
+    </div>
+    <a href="Trivia.html" class="trivia">Trivia Quiz</a>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script>
+        document.querySelector("input[type='button']").addEventListener('click', check);
+
+        function check() {
+            let usern = document.querySelector("#name");
+            let userl = document.querySelector("#lastName");
+            let usere = document.querySelector("#email");
+            let errn = document.querySelector(".errName");
+            let errl = document.querySelector(".errLname");
+            let erre = document.querySelector(".errEmail");
+            if (usern.value == "") {
+                alert("Enter name please!");
+                errn.innerHTML = "*Enter name please";
+                errn.style.color = 'red';
+                usern.focus();
+                //its make focus on the input that you forget!
+            }
+            if (userl.value == "") {
+                alert("Enter last name please!");
+                errl.innerHTML = "*Enter a last name please";
+                errl.style.color = 'red';
+                usere.focus();
+
+            }
+            if (usere.value == "" || usere.value.indexOf("@") == -1 || usere.value.indexOf(".") == -1) {
+                alert("not a valid Email!");
+                erre.innerHTML = "*Enter a valid Email please";
+                erre.style.color = 'red';
+                usere.focus();
+            }
+        }
+    </script>
+</body>
+
+</html>

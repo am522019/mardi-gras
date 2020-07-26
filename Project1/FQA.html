@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>FQA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Henny+Penny|Pattaya|Roboto:900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/FAQ.css">
+    <link rel="shorcut icon" href="images/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">
+            <nav class="navbar fixed-top navbar-light bg-light">
+                <a class="navbar-brand">
+                    <img id="logo" src="images/logo.png" width="130px" height="130px">
+                </a>
+                <ul>
+                    <li><a class="navbar-brand" href="anothermain.html">Home</a></li>
+                    <li><a class="navbar-brand" href="About.html">About Us</a></li>
+                    <li><a class="navbar-brand" href="media.html">Media</a></li>
+                    <li><a class="navbar-brand" href="FQA.html">FQA</a></li>
+                    <li><a class="navbar-brand" href="conectUs.html">Conect Us</a></li>
+                </ul>
+            </nav>
+            <br><br>
+            <br>
+            <h1 class="henney">FQA</h1>
+            <h4 class="pataya">(frequently questioned answers)</h4>
+        </div>
+        <div class="item item2">
+            <a href="https://www.yelp.com/biz/premium-parking-p402-new-orleans-2" target="_blank">
+                <img title="Primume Parking" src="images/primumeParking.jpg" width="200px" height="600px">
+            </a>
+        </div>
+        <div class="item item3">
+            <div class="container2">
+                <br><br>
+                <button class="accordion robot">What that mean Mardi Gras?</button>
+                <div class="panel">
+                    <p>Mardi Gras—the French term for 'Fat Tuesday</p>
+                </div>
+                <button class="accordion robot">What the traditina color of Mardi Gras mean?</button>
+                <div class="panel">
+                    <p>The traditional colors of Mardi Gras are purple, green, and gold.The Three shades are said to
+                        symbolize justice, faith, and power, respectively.
+                    </p>
+                </div>
+                <button class="accordion robot">Why are masks worn?</button>
+                <div class="panel">
+                    <p>By law, float riders must always have a mask on. On Fat Tuesday, masking is legal for
+                        everyone
+                        else, and the elaborate masks that some wear add to the fun.
+
+                    </p>
+                </div>
+                <button class="accordion robot">How long have "throws" been around? </button>
+                <div class="panel">
+                    <p>The tradition of float riders throwing trinkets to the crowds began in the 1870s, and continues
+                        today. Typical throws include beads, cups, doubloons and stuffed animals.
+                        <a href="https://www.mardigrasneworleans.com/history/traditions/beads-and-throws"
+                            target="_blank">for
+                            more...
+                        </a>
+                    </p>
+                </div>
+                <button class="accordion robot">How is a king chosen?</button>
+                <div class="panel">
+                    <p>The method of selecting a king varies from krewe to krewe. Some krewes hold random drawings,
+                        while others invite a celebrity guest to be their king. Rex, the King of Carnival, is chosen by
+                        the School of Design, who sponsors the Rex parade. His identity is revealed the day before the
+                        parade.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="item item5"><a href="https://www.lcm.org/" target="_blank">
+                <img title="Children Msuseum" class="childimg" src="images/childrenM.jpg" width="200px" height="600px">
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li> <a id="pp" href="privacyPolicy.html">Privacy Policy</a></li>
+            <li> <a href="#">This Web builder:Amar Siksek</a></li>
+            <li><a href="conectUs.html">Conect Us</a></li>
+        </ul>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
